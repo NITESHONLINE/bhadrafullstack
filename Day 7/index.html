@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google font link  -->
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        /* 4.universal selector  */
+        *{
+            font-family:"Poppins", sans-serif;
+            margin: 0;
+        }
+
+    /* 1. element selector */
+        h1{
+            color: green;
+        }
+
+        /* 2. id selector  */
+        #heading{
+            color: brown;
+        }
+
+        /* 3.class selector  */
+        .heading2{
+            color: blue;
+        }
+
+        /* 5. attribute selector  */
+        img[alt="imag2"]{
+            width: 200px;
+        }
+
+        /* 6. grouping selector  */
+        table, th, td, h1{
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+
+        /* 7. pseudo selector  */
+        h1:hover{
+            font-size: 25px;
+            color: green;
+        }
+
+        button:hover{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 2px 60px;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            /* border-radius: 5px; */
+            /* border-radius: 50%; */
+
+            border-bottom-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+
+        ul{
+            /* list-style-type:circle; */
+            /* list-style-type:decimal; */
+            /* list-style-type:lower-roman; */
+            list-style-type:none;
+            display: flex;
+            gap: 30px;
+        }
+        a{
+            /* text-decoration:overline; */
+            text-decoration:none;
+            color: black;
+        }
+        header{
+            background-color: gray;
+            height: 70px;
+            align-content: center;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+
+
+     <h1 id="heading">From Classroom Learning to Real-World Experience: My First Step into Digital Marketing</h1>
+
+     <h1 class="heading2">Lorem ipsum dolor sit amet .</h1>
+
+     <h3 class="heading2">Lorem ipsum dolor sit amet consectetur.</h3>
+
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtOvxYZui8fDbYlL8A70SkkYoFJTVi3w93_sFOrX7nA&s=10" alt="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1w2AhxY5az7ug6kpx4TuvahtJtu1LOW73d-zypeRPiw&s=10" alt="imag2"> -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>heading</th>
+                <th>heading</th>
+                <th>heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button>Save</button>
+
+
+    <div class="box"></div>
+
+
+    <header>
+        <nav>
+            MARLON
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+</body>
+</html>
