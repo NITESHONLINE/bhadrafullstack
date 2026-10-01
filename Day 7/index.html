@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- google font link  -->
-     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
 
     <style>
         /* 4.universal selector  */
-        *{
-            font-family:"Poppins", sans-serif;
+        * {
+            font-family: "Poppins", sans-serif;
             margin: 0;
         }
 
-    /* 1. element selector */
-        h1{
+        /* 1. element selector */
+        h1 {
             color: green;
         }
 
         /* 2. id selector  */
-        #heading{
+        #heading {
             color: brown;
         }
 
         /* 3.class selector  */
-        .heading2{
+        .heading2 {
             color: blue;
         }
 
         /* 5. attribute selector  */
-        img[alt="imag2"]{
+        img[alt="imag2"] {
             width: 200px;
         }
 
         /* 6. grouping selector  */
-        table, th, td, h1{
+        table,
+        th,
+        td,
+        h1 {
             border: 2px solid blue;
             border-collapse: collapse;
         }
 
         /* 7. pseudo selector  */
-        h1:hover{
+        h1:hover {
             font-size: 25px;
             color: green;
         }
 
-        button:hover{
+        button:hover {
             background-color: green;
             color: white;
             border: none;
             padding: 2px 60px;
         }
 
-        .box{
+        .box {
             height: 200px;
             width: 200px;
             border: 2px solid;
@@ -65,48 +71,54 @@
             border-top-left-radius: 60px;
         }
 
-        ul{
+        ul {
             /* list-style-type:circle; */
             /* list-style-type:decimal; */
             /* list-style-type:lower-roman; */
-            list-style-type:none;
+            list-style-type: none;
             display: flex;
             gap: 30px;
         }
-        a{
+
+        a {
             /* text-decoration:overline; */
-            text-decoration:none;
+            text-decoration: none;
             color: black;
         }
-        header{
-            background-color: gray;
+
+        header {
+            background-color: rgb(88, 88, 132);
             height: 70px;
             align-content: center;
+            color: white;
         }
-        nav{
+
+        header a {
+            color: white;
+        }
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
-        
-
-
     </style>
 
 </head>
+
 <body>
 
 
-     <h1 id="heading">From Classroom Learning to Real-World Experience: My First Step into Digital Marketing</h1>
+    <!-- <h1 id="heading">From Classroom Learning to Real-World Experience: My First Step into Digital Marketing</h1>
 
      <h1 class="heading2">Lorem ipsum dolor sit amet .</h1>
 
-     <h3 class="heading2">Lorem ipsum dolor sit amet consectetur.</h3>
+     <h3 class="heading2">Lorem ipsum dolor sit amet consectetur.</h3> -->
 
     <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtOvxYZui8fDbYlL8A70SkkYoFJTVi3w93_sFOrX7nA&s=10" alt="image">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1w2AhxY5az7ug6kpx4TuvahtJtu1LOW73d-zypeRPiw&s=10" alt="imag2"> -->
 
-    <table>
+    <!-- <table>
         <thead>
             <tr>
                 <th>heading</th>
@@ -126,7 +138,7 @@
     <button>Save</button>
 
 
-    <div class="box"></div>
+    <div class="box"></div> -->
 
 
     <header>
@@ -141,6 +153,31 @@
         </nav>
     </header>
 
+    <main>
+
+        <!-- hero section  -->
+        <section class="hero">
+            <div>
+                <h2>Hi,<br>
+                    I'am Marlon <br>
+                    Web Designer
+                </h2>
+
+                <button>Contact</button>
+
+                <ul>
+                    <li><a href="">linkedin</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+
+            </div>
+
+             <img src="https://portfolioasar.vercel.app/assets/img/perfil.png" alt="hero_image">
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
