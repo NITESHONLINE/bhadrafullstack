@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    /* css position  */
+    /* 1.static
+    2.relative 
+    3.absolute 
+    4.fixed
+    5.sticky */
+
+    .position{
+        border: 4px solid red;
+        width: 600px;
+        position: relative;
+    }
+    .child{
+        height: 150px;
+        width: 150px;
+        border: 2px solid;
+        text-align: center;
+        align-content: center;
+        font-size: 2rem;
+    }
+
+    #static{
+        margin-top: 100px;
+        position: static;
+    }
+    #relative{
+        background-color: lightcoral;
+       top: 100px; 
+       /* position: relative; */
+    }
+    #absolute{
+        background-color: lightblue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #fixed{
+        position: fixed;
+        background: red;
+        bottom: 0;
+    }
+    #sticky{
+        position: sticky;
+        top: 0;
+        background-color: aquamarine;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+    <div class="position">
+        <div class="child" id="static">static</div>
+        <div class="child" id="relative">relative</div>
+        <div class="child" id="absolute">absolute</div>
+        <div class="child" id="fixed">fixed</div>
+    </div>
+    <div class="child" id="sticky">sticky</div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit suscipit saepe placeat cum ab accusantium autem quos debitis. Eligendi veritatis labore eos deleniti. Iusto architecto id eligendi nostrum quos!
+         <!-- add more content to see sticky effect -->
+    </p>
+
+    
+
+    
+</body>
+</html>
