@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transition</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: black; 
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        #moon{
+            box-shadow: 0px 35px 2px 2px gray;  
+            /* transition: ; */
+
+            transition-property:all;
+            transition-duration: 2s;
+            /* transition-delay: 2s; */
+
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: cubic-bezier(0.52,-0.41, 0, 1.12);
+
+        }
+        
+        #moon:hover{
+            background-color: rgb(246, 82, 23);
+            box-shadow: 0px 0px 77px 39px orangered;
+            cursor: pointer;
+            /* cursor:help; */ 
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="box" id="moon"></div>
+
+
+</body>
+</html>

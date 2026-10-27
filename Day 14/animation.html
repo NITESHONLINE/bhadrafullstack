@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            transition: all 2s;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation-name: moveBox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        .box:hover{
+            margin-top: 200px;
+        }
+        
+        /* @keyframes moveBox {
+            from{
+                background: green;
+            }to{
+                margin-top: 200px;
+                background: brown;
+            }
+        } */
+
+         @keyframes moveBox {
+            0%{
+                background: green;
+            }25%{
+                margin-top: 0px;
+                margin-left: 500px;
+                background: brown;
+            }50%{
+                margin-left: 500px;
+                margin-top:500px;
+                background: brown;
+            } 75%{
+                margin-top:500px;
+                margin-left: 0px;
+                background: brown;
+            }100%{
+                margin-top:0px;
+                background: brown;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
