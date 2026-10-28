@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .transform{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .box {
+            height: 150px;
+            width: 150px;
+            background: lightseagreen;
+        }
+
+        .minibox {
+            height: 150px;
+            width: 150px;
+            background: lightcoral;
+            transition: all 2s;
+            align-content: center;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #rotate:hover {
+            cursor: pointer;
+            /* transform:rotate(180deg); */
+            /* transform:rotateX(65deg);  */
+            transform:rotateY(65deg); 
+        }
+
+        #skew:hover {
+            cursor: pointer; 
+            /* transform: skew(65deg); */
+            /* transform: skewX(65deg); */
+            transform: skewY(65deg); 
+        }
+
+        #scale:hover {
+            cursor: pointer; 
+            /* transform: scale(2);  */
+            /* transform: scaleX(2);  */
+            transform: scaleY(2); 
+        }
+        #translate:hover{
+            cursor: pointer;
+            /* transform: translate(150px,150px); */
+            /* transform: translateX(150px); */
+            transform: translateY(150px);
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="transform">
+        <div class="box">
+            <div class="minibox" id="rotate">Rotate</div>
+        </div>
+        <div class="box">
+            <div class="minibox" id="skew">Skew</div>
+        </div>
+        <div class="box">
+            <div class="minibox" id="scale">scale</div>
+        </div>
+        <div class="box">
+            <div class="minibox" id="translate">translate</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
